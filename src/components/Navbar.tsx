@@ -5,8 +5,8 @@ import { useState } from 'react'
 function Navbar() {
   const [menuAberto, setMenuAberto] = useState(false)
 
-  const linkAtivo   = "bg-yellow-400 text-[#1e2a4a] font-bold px-4 py-1.6  rounded-full text-sm"
-  const linkInativo = "text-slate-300 hover:text-white px-3 py-1.5 text-sm transition-colors"
+const linkAtivo = "bg-yellow-400 text-[#1e2a4a] font-bold px-4 py-2.5 rounded-full text-sm"
+const linkInativo = "text-white px-4 py-2.5 rounded-full text-sm hover:bg-slate-700 transition"
 
   const fecharMenu = () => setMenuAberto(false)
 

@@ -3,7 +3,7 @@ import Home from './pages/home/index'
 import Sobre from './pages/sobre/index'
 import Servicos from './pages/servicos/index'
 import Portfolio from './pages/portfolio/index'
-import Contato from './pages/contato/index'
+import Contato from './pages/Contato/index'
 
 function App() {
     return (
