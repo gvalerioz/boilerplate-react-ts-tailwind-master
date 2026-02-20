@@ -1,11 +1,21 @@
-import { NavLink } from "react-router-dom";
+import Navbar from '../../components/Navbar'
+import PageCard from '../../components/PageCard'
 
-export function Home() {
+function Home() {
+  return (
+    <>
 
-    return (
-        <>
-            <h1>Exemplo de página inicial</h1>
-            <NavLink className='text-xs text-cyan-800 underline' to={'/contato'}>Link para página de contato</NavLink>
-        </>
-    )
+      <Navbar />
+
+      <PageCard
+        badge="Início"
+        emoji="🏠"
+        titulo="Bem-vindo ao Sistema"
+        subtitulo="Página inicial · Home"
+        texto="Esta é a página inicial do sistema. Aqui você encontrará um resumo geral e acesso rápido a todas as seções disponíveis. Utilize o menu superior para navegar entre as páginas de forma simples e rápida."
+      />
+    </>
+  )
 }
+
+export default Home

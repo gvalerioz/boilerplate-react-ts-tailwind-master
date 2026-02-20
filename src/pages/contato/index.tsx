@@ -1,11 +1,21 @@
-import { NavLink } from "react-router-dom";
+import Navbar from '../../components/Navbar'
+import PageCard from '../../components/PageCard'
 
-export function Contato() {
+function Contato() {
+  return (
+    <>
+      <Navbar />
 
-    return (
-        <>
-            <h1>Exemplo de página de contato</h1>
-            <NavLink className='text-xs text-cyan-800 underline' to={'/'}>Link para página inicial</NavLink>
-        </>
-    )
+      <PageCard
+        badge="Contato"
+        emoji="✉️"
+        titulo="Entre em Contato"
+        subtitulo="Fale conosco · Contact"
+        texto="Tem alguma dúvida ou projeto em mente? Adoraríamos ouvir você. Entre em contato pelo e-mail contato@sistema.dev ou pelas nossas redes sociais. Nossa equipe responde em até 24 horas nos dias úteis."
+        corBadge="bg-orange-100 text-orange-700"
+      />
+    </>
+  )
 }
+
+export default Contato
